@@ -58,7 +58,6 @@ body{
 .section-1{
     background: url("https://images.pexels.com/photos/345522/pexels-photo-345522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     min-height: 100vh;
-    background: no-repeat;
 }
 
 .section-1 .left{
@@ -110,7 +109,6 @@ body{
 
 #section-2, #section-3, #section-4{
     display: none;
-    background: no-repeat;
 }
 
 .section-2{
