@@ -1,0 +1,326 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: #F4CE14;
+    background: #776B5D;
+}
+
+body{
+    font-family: 'Play', sans-serif;
+    line-height: 2;
+}
+
+.full-container{
+    background-color: #000;
+}
+
+.wrapping-container{
+    display: flex;
+    color: #fff;
+}
+
+.left, .right{
+    width: 50%;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.navigation-btn{
+    font-size: .85rem;
+    background-color: #16FF00;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navigation-btn:hover{
+    background-color: #16b407;
+}
+
+.upper-navigation-btn{
+    top: 15px;
+    left: 15px;
+}
+
+.lower-navigation-btn{
+    bottom: 15px;
+    right: 15px;
+}
+
+.section-1{
+    background: url("https://images.pexels.com/photos/345522/pexels-photo-345522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    min-height: 100vh;
+}
+
+.section-1 .left{
+    position: relative;
+}
+
+.section-1 .right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: rgba(0, 0, 0, .55);
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+}
+
+.main-img{
+    width: 65%;
+    object-fit: cover;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.side-img{
+    width: 30%;
+    border-radius: 5px;
+    position: absolute;
+    right: 130px;
+    top: 270px;
+}
+
+.main-name{
+    font-size: 6rem;
+}
+
+.main-inner{
+    margin-top: 50px;
+    width: 70%
+}
+
+.main-inner-heading{
+    font-size: 2.5rem;
+    color: #16FF00;
+}
+
+.main-inner .content{
+    margin-left: 25px;
+    text-align: justify;
+}
+
+#section-2, #section-3, #section-4{
+    display: none;
+}
+
+.section-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/414083/pexels-photo-414083.jpeg");
+    background-size: 100% 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.profile-card{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 50px;
+    background-color: #2b2929;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+}
+
+.profile-card img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.profile-name{
+    font-size: 2rem;
+    color: #16FF00;
+}
+
+
+.profile-social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.profile-social-media i{
+    color: #fff;
+}
+
+.profile-social-media i:hover{
+    color: #16FF00;
+}
+
+.section-3{
+    position: relative;
+    min-height: 100vh;
+    background: url("https://images.pexels.com/photos/789380/pexels-photo-789380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: 100%;
+}
+
+.web-wonderworks{
+    margin: 70px 40px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .55);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+}
+
+.wonderworks-heading{
+    font-size: 3.5rem;
+}
+
+.wonderworks-content{
+    color: #16FF00;
+}
+
+.wonderworks-content i{
+    color: #fff;
+}
+
+.section-4{
+    position: relative;
+    min-height: 100vh;
+    background-image: url("https://images.pexels.com/photos/33622/fashion-model-beach-hat.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .main-name{
+        font-size: 4.5rem;
+    }
+    
+    .main-inner{
+        width: 80%
+    }
+    
+    .main-inner-heading{
+        font-size: 2rem;
+    }
+
+    .wonderworks-heading{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main-name{
+        font-size: 4rem;
+    }
+    
+    .main-inner-heading{
+        font-size: 1.75rem;
+    }
+
+    .main-img{
+        width: 85%;
+        height: 500px;
+    }
+    
+    .side-img{
+        width: 35%;
+        right: 60px;
+        top: 300px;
+    }
+
+    .wonderworks-heading{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main-name{
+        font-size: 3.1rem;
+    }
+    
+    .main-inner-heading{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+
+    .right{
+        width: 100%;
+    }
+
+    .left{
+        display: none;
+    }
+    
+    .main-name{
+        font-size: 4.5rem;
+    }
+    
+    .main-inner{
+        width: 70%
+    }
+    
+    .main-inner-heading{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .main-name{
+        font-size: 3.5rem;
+    }
+    
+    .main-inner{
+        width: 80%
+    }
+    
+    .main-inner-heading{
+        font-size: 1.7rem;
+    }
+
+    .wonderworks-heading{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .wonderworks-heading{
+        font-size: 1.7rem;
+    }
+    
+    .profile-card{
+        max-width: 440px;
+        padding: 20px;
+        margin: 40px;
+    }
+    
+    .profile-card img{
+        height: 130px;
+        width: 130px;
+    }
+    
+    .profile-name{
+        font-size: 1.7rem;
+    }
+    
+    
+    .profile-social-media{
+        margin: 10px;
+        font-size: 15px;
+    }
+}
