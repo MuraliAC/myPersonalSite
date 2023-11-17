@@ -20,12 +20,12 @@ body{
 }
 
 .wrapping-container{
-    display: flex;
+    /* display: flex; */
     color: #fff;
 }
 
 .left, .right{
-    width: 100%;
+    width: 50%;
     padding: 40px;
     overflow: hidden;
 }
@@ -58,6 +58,7 @@ body{
 .section-1{
     background: url("https://images.pexels.com/photos/345522/pexels-photo-345522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     min-height: 100vh;
+    display: flex;
 }
 
 .section-1 .left{
@@ -168,6 +169,7 @@ body{
 }
 
 .section-3{
+    display: flex;
     position: relative;
     min-height: 100vh;
     background: url("https://images.pexels.com/photos/789380/pexels-photo-789380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
@@ -195,6 +197,7 @@ body{
 }
 
 .section-4{
+    display: flex;
     position: relative;
     min-height: 100vh;
     background-image: url("https://images.pexels.com/photos/33622/fashion-model-beach-hat.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
@@ -301,6 +304,11 @@ body{
 @media only screen and (max-width: 450px) {
     .wonderworks-heading{
         font-size: 1.7rem;
+    }
+
+    .web-wonderworks{
+        margin: 40px 15px;
+        padding: 10px;
     }
     
     .profile-card{
