@@ -123,7 +123,7 @@ body{
 }
 
 .profile-card{
-    max-width: 500px;
+    max-device-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,7 +204,7 @@ body{
     background-size: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-device-width: 1200px) {
     
     .main-name{
         font-size: 4.5rem;
@@ -223,7 +223,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-device-width: 950px) {
     .main-name{
         font-size: 4rem;
     }
@@ -248,7 +248,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-device-width: 950px) {
     .main-name{
         font-size: 3.1rem;
     }
@@ -259,7 +259,7 @@ body{
 
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-device-width: 760px) {
 
     .right{
         width: 100%;
@@ -282,7 +282,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-device-width: 630px) {
     .main-name{
         font-size: 3.5rem;
     }
@@ -301,7 +301,7 @@ body{
     
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-device-width: 450px) {
     .wonderworks-heading{
         font-size: 1.7rem;
     }
@@ -312,7 +312,7 @@ body{
     }
     
     .profile-card{
-        max-width: 440px;
+        max-device-width: 440px;
         padding: 20px;
         margin: 40px;
     }
